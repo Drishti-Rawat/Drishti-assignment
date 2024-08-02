@@ -58,7 +58,7 @@ const Navbar = () => {
           <DropdownMenuTrigger asChild>
             <Menu  color="yellow"/>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-44 sm:w-56 mx-8 ">
+          <DropdownMenuContent className="w-32 sm:w-56 mx-8 ">
             <DropdownMenuGroup>
               <DropdownMenuItem>Home</DropdownMenuItem>
               <DropdownMenuItem>Courses</DropdownMenuItem>
@@ -67,8 +67,8 @@ const Navbar = () => {
                 <DropdownMenuSubTrigger>
                   <span>IT-Services</span>
                 </DropdownMenuSubTrigger>
-                <DropdownMenuPortal>
-                  <DropdownMenuSubContent>
+                <DropdownMenuPortal className="">
+                  <DropdownMenuSubContent className="w-20 sm:w-full ">
                    <Link href="/Drones-and-Robotics"> <DropdownMenuItem>Drones & Robotics</DropdownMenuItem></Link>
                    <Link href="/CyberAnalysis"> <DropdownMenuItem>Cyber Analysis</DropdownMenuItem></Link>
                    <Link href="/Artificial-Intergration"> <DropdownMenuItem>Artificial Integration</DropdownMenuItem></Link>

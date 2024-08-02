@@ -46,7 +46,7 @@ const Hero = () => {
   }, []);
   return (
     <section className="relative  bg-cyan-800 h-[80vh]  md:h-screen w-full  flex  justify-center items-center  overflow-hidden   ">
-      <div ref={heroref} className="z-20  flex justify-center items-center  flex-col space-y-6 px-7 overflow-hidden ">
+      <div ref={heroref} className="z-20 text-center  flex justify-center items-center  flex-col space-y-6 px-7 overflow-hidden ">
         <h2 className=" text-2xl   sm:text-5xl md:text-7xl  text-amber-400 font-extrabold tracking-wider ">
           App Development
         </h2>

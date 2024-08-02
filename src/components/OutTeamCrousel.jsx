@@ -13,11 +13,11 @@ import TeamCard from "./TeamCard"
 const OutTeamCrousel = ({members}) => {
     
   return (
-    <Carousel   plugins={[Autoplay({delay:1500})]} className = '' >
+    <Carousel    plugins={[Autoplay({delay:1500})]} className = '' >
     <CarouselContent className=" py-4 px-10  w-full max-w-[300px] sm:max-w-md md:max-w-3xl">
         {
-            members && members.map(member=>(
-                <CarouselItem>
+            members && members.map((member,index)=>(
+                <CarouselItem key={index}>
                     <TeamCard member={member}/>
                 </CarouselItem>
             ))

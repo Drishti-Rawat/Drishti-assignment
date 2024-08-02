@@ -7,7 +7,7 @@ const TeamCard = ({member}) => {
     <div className='text-black bg-gray-100 hover:bg-gray-200  rounded-3xl shadow-md h-96  shadow-gray-300 max-w-sm sm:max-w-lg md:max-w-3xl  justify-center items-center px-5 py-8 flex flex-col ' >
       
       <div className=''>
-        <Image src={member.profile} width={200} height={200} className=' object-cover rounded-full w-32 h-32 md:w-48 md:h-48 '/>
+        <Image alt="image" src={member.profile} width={200} height={200} className=' object-cover rounded-full w-32 h-32 md:w-48 md:h-48 '/>
       </div>
       {/* <h2>{feature.title}</h2> */}
       <div className="text-center space-y-2">

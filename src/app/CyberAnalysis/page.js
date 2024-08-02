@@ -9,7 +9,7 @@ import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const page = () => {
+const Page = () => {
     const featuresRef = useRef([]);
     const whyUsRef = useRef([]);
     const teamRef = useRef(null);
@@ -215,6 +215,7 @@ const page = () => {
 
         <div ref={heroimgref} className="absolute  ">
           <Image
+          alt="image"
             src="/new-app-development-desktop.png"
             width={500}
             height={500}
@@ -234,7 +235,7 @@ const page = () => {
         </h2>
 
         <div ref={cardref} className=" flex justify-center items-center flex-col lg:flex-row gap-10 ">
-          {features && features.map((feature) => <Card feature={feature} />)}
+          {features && features.map((feature,index) => <Card key={index} feature={feature} />)}
         </div>
       </div>
 
@@ -246,13 +247,13 @@ const page = () => {
         <div className="flex  lg:flex-row flex-col justify-center items-center    ">
 
             <div ref={imageref}>
-                <Image src="/inovative_team.png" width={500} height={500}/>
+                <Image alt="image" src="/inovative_team.png" width={500} height={500}/>
             </div>
 
             <div ref={cardref} className="grid grid-cols-1 lg:grid-cols-2  gap-10 justify-center items-center">
                 {
-                    WhyUs && WhyUs.map(item=>(
-                        <Card feature={item}/>
+                    WhyUs && WhyUs.map((item,index)=>(
+                        <Card key={index} feature={item}/>
                     ))
                 }
 
@@ -292,4 +293,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
